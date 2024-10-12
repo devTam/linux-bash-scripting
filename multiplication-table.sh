@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Uses List Format for the multiplication table
 while true; do
     read -p "Enter a number for the multiplication table: " number
     echo ""
@@ -49,3 +49,18 @@ while true; do
         continue
     fi
 done
+
+
+#Uses C-style format for the multiplication table
+
+for ((i=0; i <=10; i++)); do
+    echo "$number * $i = $((number * i))"
+    echo ""
+done
+
+# for ((i=start; i<=end; i++)); do
+    echo "$number * $i = $((number * i))"
+    echo ""
+done
+
+# For custom ranges, C-style format is easier and more flexible than List Format
