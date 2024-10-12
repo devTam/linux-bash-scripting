@@ -52,13 +52,16 @@ done
 
 
 #Uses C-style format for the multiplication table
+echo "Execution ended."
+exit 0
+
 
 for ((i=0; i <=10; i++)); do
     echo "$number * $i = $((number * i))"
     echo ""
 done
 
-# for ((i=start; i<=end; i++)); do
+for ((i=$start; i<=$end; i++)); do
     echo "$number * $i = $((number * i))"
     echo ""
 done
